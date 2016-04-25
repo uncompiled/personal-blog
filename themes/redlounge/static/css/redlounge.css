@@ -81,7 +81,7 @@ h1.brand-title {
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
 	padding-top: 1rem;
-	font-size: 2em;
+	font-size: 2rem;
 	margin-bottom: 0.25rem;
 }
 h2.brand-tagline {
@@ -446,10 +446,10 @@ hr.thin {
 
 @media (max-width: 1024px) {
 	h1.brand-title {
-		font-size: 2.5rem;
+		font-size: 1.4rem;
 	}
 	h2.brand-tagline {
-		font-size: 1.2rem;
+		font-size: 1.0rem;
 	}
 }
 
