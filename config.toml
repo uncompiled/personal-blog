@@ -1,0 +1,21 @@
+baseurl = "https://uncompiled.github.io"
+languageCode = "en-us"
+title = "@uncompiled"
+canonifyurls = true
+publishdir = "public"
+theme = "redlounge"
+paginate = 3
+
+[params]
+  google_analytics = "UA-58035557-1"
+  sidebartitle = "@uncompiled"
+
+[[menu.social]]
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "https://twitter.com/uncompiled"
+    identifier = "twitter"
+
+[[menu.social]]
+    pre = "<i class='fa fa-github'></i>"
+    url = "https://github.com/uncompiled"
+    identifier = "github"
