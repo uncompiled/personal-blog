@@ -4,6 +4,7 @@ title = "uncompiled"
 canonifyurls = true
 publishdir = "public"
 theme = "redlounge"
+pygmentsuseclasses = true
 paginate = 3
 
 [params]
