@@ -25,7 +25,7 @@ That's an important question. My first thought was using [US Census data](http:/
 
 The first thing that I noticed about [America's staggering defense budget](http://www.washingtonpost.com/blogs/wonkblog/wp/2013/01/07/everything-chuck-hagel-needs-to-know-about-the-defense-budget-in-charts/) is this infographic:
 
-<img class="img-responsive"
+<amp-img layout="responsive" width="375" height="200"
   src="http://img.washingtonpost.com/blogs/wonkblog/files/2013/01/4A8078449E794DFB8CC33ADD00A6F1AF.gif">
 
 This image shows that in 2011, the United States spent more on its defense budget than the **next 13 countries combined**. Whether it was intentional or not, this chart paints the United States of America as the premier warmonger in the entire world. Sure, it tells a story, but is it an honest one? Fortunately, the article points to the [Stockholm International Peace Research Institute](http://www.sipri.org/) as the source. Once I acquired the data set from their website, I noticed that by presenting the defense budget as the only data point, it removed the correlation between military spending and the relative wealth of each country. Although the United States defense budget *is* staggering, I wanted to know what it looks like in relation to our [gross domestic product](http://en.wikipedia.org/wiki/Gross_domestic_product).
