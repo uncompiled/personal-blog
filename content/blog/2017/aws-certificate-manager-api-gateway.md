@@ -5,7 +5,7 @@ description: "How to set up a custom domain name with AWS API Gateway"
 tags: [ "aws", "ssl", "https", "certificate manager", "api gateway", "letsencrypt", "acme" ]
 ---
 
-# TLDR: You can't.
+## Updated: [As of Mar 9, 2017, now you can!](https://aws.amazon.com/about-aws/whats-new/2017/03/amazon-api-gateway-integrates-with-aws-certificate-manager-acm/)
 
 If you're reading this, you're probably trying to figure out [how to set
 up a custom domain name with AWS API Gateway](http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html).
