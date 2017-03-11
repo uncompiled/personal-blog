@@ -1,4 +1,4 @@
-baseurl = "https://uncompiled.github.io"
+baseurl = "https://www.uncompiled.org"
 languageCode = "en-us"
 title = "uncompiled"
 canonifyurls = true
