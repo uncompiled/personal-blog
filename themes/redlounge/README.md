@@ -141,6 +141,4 @@ There are a few partials being used so that key areas can be easily overwritten.
  - ```sidebar.html``` The sidebar which is already pretty customizable with site params and menus, but can also easily be changed if need be
  - ```sidebarheader.html``` Placed above the h1 and h2 elements in the sidebar (which will appear if your site config was set), allowing for further sidebar header adjustments
  - ```singletop.html``` Placed at the top of the page for single.html (but under the banner)
- - ```listtop.html``` Placed at the top of the page for list.html
  - ```footer.html``` The footer
- - ```bodyend.html``` Right before ```</body>``` (within list.html, single.html, and index.html - be sure to include it when/if overwriting with your own index.html)
