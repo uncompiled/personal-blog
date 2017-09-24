@@ -1,7 +1,6 @@
 <div class="sidebar">
   <div class="header">
     {{ if .Site.Params.sidebartitle }}<h1 class="brand-title">{{ .Site.Params.sidebartitle }}</h1>{{ end }}
-    {{ if .Site.Params.sidebartagline }}<h2 class="brand-tagline">{{ .Site.Params.sidebartagline }}</h2>{{ end }}
 
     <nav class="nav">
       <ul class="nav-list">
@@ -16,7 +15,7 @@
     <div class="social-buttons">
       {{ range .Site.Menus.social }}
         {{ if .URL }}
-        <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
+        <a href="{{ .URL }}">{{ .Pre }}</a>
         {{ end }}
       {{ end }}
     </div>

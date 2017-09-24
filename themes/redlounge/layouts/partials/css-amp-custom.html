@@ -7,8 +7,11 @@
 html {
 	color: #2d303b;
 }
-html, p, nav, section, article {
-	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+h1,h2,h3,nav {
+	font-family: Palatino,Georgia,'Times New Roman',Times,serif
 }
 pre {
     padding: 0;
@@ -34,10 +37,7 @@ a:focus {
 p a {
 	color:#7F1000;
 }
-h1 {
-	font-family: 'Libre Baskerville', serif;
-	font-weight: 700;
-}
+
 .center {
 	text-align: center;
 }
@@ -68,23 +68,15 @@ h1 {
 
 /* Sidebar */
 h1.brand-title {
-	font-family: 'Libre Baskerville', serif;
-	font-weight: 400;
 	padding-top: 1rem;
 	font-size: 2rem;
 	margin-bottom: 0.25rem;
 }
-h2.brand-tagline {
-	font-size: 1.4rem;
-	margin-top: 0.25rem;
-}
+
 .sidebar h1.brand-title {
 	color: #fff;
 }
-.brand-tagline {
-	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
-	font-weight: 200;
-}
+
 .sidebar {
 	background: #2d303b;
   border: 1px solid #2d303b;
@@ -127,8 +119,6 @@ h2.brand-tagline {
     text-decoration: none;
 }
 .nav-item-separator {
-	font-weight: 100;
-	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 	color: #E54028;
 	letter-spacing: -0.35rem;
 	margin-right: 0.4rem;
@@ -152,20 +142,16 @@ h1.post-title a {
 }
 .post-date {
 	color: #E54028;
-	font-family: 'Libre Baskerville', serif;
-	font-weight: 400;
+	font-family: Palatino;
 	font-size: 1.0rem;
 }
 .post-date-day {
 	font-size: 1.5rem;
-	margin-right: -0.2rem;
+	font-weight: bold;
 }
 .post-date-separator {
-	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
-	font-weight: 100;
-	letter-spacing: -0.35rem;
-	font-size: 1.9rem;
-	color: #7F1000;
+	font-size: 1.3rem;
+	color: #000;
 }
 .post-date-month {
 	font-size: 0.8rem;
@@ -204,10 +190,8 @@ a.post-author {
 	margin-bottom: .25rem;
 	font-size: 1.4rem;
 	color: #7F1000;
-	font-weight: 500;
 }
 .post h3.post-subtitle {
-	font-weight: 200;
 	color: #999;
 }
 .post-title {
@@ -218,8 +202,6 @@ a.post-author {
 .post-subtitle {
 	font-size: 1.5rem;
 	margin: 0;
-	font-weight: 200;
-	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 	color: #999;
 }
 .post-reading-time {
@@ -244,12 +226,12 @@ a.post-author {
 .read-more-link {
 	float: right;
 	clear: left;
+	font-family: Palatino;
+	font-style: italic;
 	margin-top: 0.25rem;
 }
 .read-more-link a {
 	text-decoration: none;
-	/*text-transform: uppercase;*/
-	font-weight: 400;
 	font-size: 0.9rem;
 	color: #7F1000;
 }
@@ -257,8 +239,6 @@ a.post-author {
 	color: #E54028;
 }
 .read-more-slashes {
-	font-weight: 100;
-	font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 	color: #E54028;
 	letter-spacing: -0.26rem;
 	margin-right: 0.3rem;
@@ -398,7 +378,6 @@ nav#TableOfContents li {
 .footer {
     text-align: center;
     padding: 1rem 0;
-    font-weight: 100;
     color: #aeaeae;
     font-size: 0.7rem;
 }
@@ -439,9 +418,6 @@ hr.thin {
 @media (max-width: 1024px) {
 	h1.brand-title {
 		font-size: 1.4rem;
-	}
-	h2.brand-tagline {
-		font-size: 1.0rem;
 	}
 }
 

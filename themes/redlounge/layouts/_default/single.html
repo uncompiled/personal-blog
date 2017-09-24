@@ -39,15 +39,7 @@
 				</div>
 			{{ end }}
 
-			{{ if .Params.socialsharing }}
-		    	{{ partial "socialsharing.html" . }}
-		    {{ end }}
-
-            {{ .Content }}
-
-			{{ if .Params.socialsharing }}
-		    	{{ partial "socialsharing.html" . }}
-		    {{ end }}
+      {{ .Content }}
 
 			{{ if .Params.tags }}
 				<div class="tags-list">
