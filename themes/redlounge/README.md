@@ -140,5 +140,4 @@ There are a few partials being used so that key areas can be easily overwritten.
  - ```socialsharing.html``` Allows you to change what's displayed when ```socialsharing = true```
  - ```sidebar.html``` The sidebar which is already pretty customizable with site params and menus, but can also easily be changed if need be
  - ```sidebarheader.html``` Placed above the h1 and h2 elements in the sidebar (which will appear if your site config was set), allowing for further sidebar header adjustments
- - ```singletop.html``` Placed at the top of the page for single.html (but under the banner)
  - ```footer.html``` The footer
