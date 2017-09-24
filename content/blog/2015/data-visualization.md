@@ -40,7 +40,7 @@ In the spirit of open data, GDP information can be obtained directly from the:
 
 Once I had the data, this part was actually pretty easy, despite never using D3 before. Once I sat down to learn D3, I was a bit overwhelmed by the number of visualization options that I could do. If you're curious, this [D3 gallery](https://github.com/mbostock/d3/wiki/Gallery) provides numerous examples of what can be done with the library.  I originally wanted to do something cartographic using publically available GeoJSON data, but for my first visualization project, I decided to stick to a bar chart:
 
-> [Global Military Spending for 2013](http://www.uncompiled.org/datavis-militarization/military-spending.html)
+> [Global Military Spending for 2013](https://uncompiled.github.io/datavis-militarization/military-spending.html)
 
 Using the SIPRI data set for 2013, I present the top 15 countries with the highest military spending, which clearly shows the United States as the leader (spending $640B on the military budget). However, my visualization also factors in the nominal GDP of each country and then sorts their military budgets as a percentage of GDP. After this calculation is performed, the information is dynamically resorted and shows that the United States is no longer the biggest military spender. With the addition of this information, the United States no longer appears to be as warmongering as the earlier chart.
 
