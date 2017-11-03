@@ -25,4 +25,5 @@ to write more articles.
 ## Algorithms
 
 - [Binary Search](https://medium.com/@uncompiled/binary-search-b8f8efcea0f8)
+- [Sorting It Out (Part 1)](https://medium.com/@uncompiled/sorting-things-out-part-1-2c7cc68c422)
 
