@@ -19,15 +19,17 @@ One of the coolest parts of the W3C draft for Web Components is the specificatio
 
 Without Web Components, if you wanted to embed a Google Map onto your website, you'd probably use an iframe:
 
-{{< highlight html >}}
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50710.53534045161!2d-122.08126699999998!3d37.403819399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sMountain+View%2C+CA!5e0!3m2!1sen!2sus!4v1419821604530" width="600" height="450" frameborder="0" style="border:0"></iframe>
-{{< / highlight >}}
+```
+<iframe src="https://www.google.com/maps/embed?pb=..." 
+        width="600" height="450">
+</iframe>
+```
 
 That's pretty ugly. While this code makes sense to a web developer, the relationship between the syntax and the semantics is unclear. Locally, the **iframe** creates a virtual window that is 600 pixels wide and 450 pixels high and fills it with content provided by the URL. However, using the [google-map](http://googlewebcomponents.github.io/google-map/components/google-map/) Custom Element, we can define the **google-map** tag as an HTML element that represents a Google Map:
 
-{{< highlight html >}}
+```
 <google-map latitude="37.779" longitude="-122.3892"></google-map>
-{{< / highlight >}}
+```
 
 This code is much more readable. The **google-map** element encapsulates a Google Map as part of the DOM with attributes such as latitude and longitude. It also encapsulates the formatting (style) and the interaction with the Google Maps API, allowing designers and developers to create content faster.
 
@@ -39,14 +41,14 @@ Once you have a web browser that supports Web Components (or have the webcompone
 
 In the following code sample, we import the **google-map** Custom Element definition from *google-map.html* and can begin using the newly defined element. This snippet assumes that the *google-map.html* exists as a web component in the same directory as the current page of your web application.
 
-{{< highlight html >}}
+```
 <!-- Load Polyfill Web Components support for older browsers -->
 <script src="components/webcomponentsjs/webcomponents.js"></script>
 <!-- Import element -->
 <link rel="import" href="google-map.html">
 <!-- Use element -->
 <google-map lat="37.790" long="-122.390"></google-map>
-{{< / highlight >}}
+```
 
 That's it! In the next section, we'll dive deeper into the internals of Web Components.
 
@@ -56,11 +58,11 @@ So far, we've seen the **google-map** Custom Element in action and we've also se
 
 The **template** element is part of the WHATWG HTML living standard and describes a method to "declare fragments of HTML that can be cloned and inserted in the document by script". Custom Elements use the **template** element to define the inert document fragment that will be cloned into the DOM each time it is instantiated. This brings up an interesting point regarding the semantic meaning of the template fragment.  By itself, the **template** element doesn't actually represent anything.  Take the following snippet:
 
-{{< highlight html >}}
+```
 <template>
   <div> Hello </div>
 </template>
-{{< / highlight >}}
+```
 
 This **template** element contains a DocumentFragment consisting of a single **div** wrapped around the text "Hello", but this doesn't actually represent anything... yet. Once the template is cloned, the templated HTML fragment is copied underneath the newly instantiated node et voila! Custom Elements rely on templates to clone and instantiate new DOM elements with HTML fragments, but they are more powerful because they *are* HTML elements and therefore, they have attributes and can be treated like any other element in the DOM.  Take that, iframe content!
 
